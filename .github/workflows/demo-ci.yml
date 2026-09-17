@@ -1,0 +1,8 @@
+name: demo-ci
+on: [push, pull_request]
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "review-pipeline-demo smoke check"
+      - run: exit 1
