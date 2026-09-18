@@ -1,0 +1,11 @@
+name: Demo Pipeline
+
+on:
+  pull_request:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo 'demo pipeline ok'
